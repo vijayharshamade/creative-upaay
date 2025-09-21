@@ -2,7 +2,7 @@
 import { useDispatch, useSelector } from "react-redux";
 import { selectTaskById } from "../redux/selectors";
 import { deleteTask } from "../redux/tasksSlice";
-import { Draggable } from "react-beautiful-dnd";
+import { Draggable } from "@hello-pangea/dnd";
 
 export default function TaskCard({ id, index }) {
   const t = useSelector((s) => selectTaskById(s, id));

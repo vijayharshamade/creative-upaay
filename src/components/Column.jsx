@@ -3,7 +3,7 @@ import { useSelector } from "react-redux";
 import { selectFilteredIds } from "../redux/selectors";
 import TaskCard from "./TaskCard";
 import AddTaskDialog from "./AddTaskDialog";
-import { Droppable } from "react-beautiful-dnd";
+import { Droppable } from "@hello-pangea/dnd";
 
 export default function Column({ status, title, color }) {
   const ids = useSelector((s) => selectFilteredIds(s, status));

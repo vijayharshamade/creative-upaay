@@ -2,7 +2,7 @@
 import AppShell from "../components/AppShell";
 import FilterBar from "../components/FilterBar";
 import Column from "../components/Column";
-import { DragDropContext } from "react-beautiful-dnd";
+import { DragDropContext } from "@hello-pangea/dnd";
 import { useDispatch } from "react-redux";
 import { moveTask } from "../redux/tasksSlice";
 
